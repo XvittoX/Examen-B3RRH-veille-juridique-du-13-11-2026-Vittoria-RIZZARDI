@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Veille réglementaire RH – NOVALYS</title>
+<style>
+:root{--bg:#eef1f6;--card:#fff;--ink:#16233b;--mut:#55627a;--navy:#12284c;--acc:#9a7b3c;--line:#d5dbe6;--soft:#f3f5f9;--onnavy:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1524;--card:#16223a;--ink:#e8edf6;--mut:#a3afc5;--navy:#0a1220;--acc:#c9a85c;--line:#2b3a58;--soft:#1c2a46}}
+:root[data-theme="dark"]{--bg:#0d1524;--card:#16223a;--ink:#e8edf6;--mut:#a3afc5;--navy:#0a1220;--acc:#c9a85c;--line:#2b3a58;--soft:#1c2a46}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*{box-sizing:border-box}
+body{margin:0;height:100%;height:100dvh;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Calibri,Helvetica,Arial,sans-serif;overflow:hidden}
+.deck{height:100%;position:relative}
+.s{position:absolute;inset:0 0 calc(52px + env(safe-area-inset-bottom,0px)) 0;padding:28px 6vw 18px;display:none;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.s.on{display:block}
+.tag{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);font-weight:700;margin-bottom:6px}
+h1{font-size:clamp(28px,4.5vw,46px);margin:0 0 10px;color:var(--ink);line-height:1.15}
+h2{font-size:clamp(20px,2.6vw,30px);margin:0 0 14px;color:var(--ink);line-height:1.2;border-left:5px solid var(--acc);padding-left:12px}
+p,li{font-size:clamp(14px,1.55vw,18px);line-height:1.5}
+.mut{color:var(--mut)}
+.cover,.div{background:var(--navy);color:var(--onnavy);display:none;align-items:center}
+.cover.on,.div.on{display:flex}
+.cover h1,.div h1{color:#fff}
+.cover .in,.div .in{max-width:900px}
+.ico{width:64px;height:64px;stroke:#c9a85c;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;margin-bottom:12px}
+.pts{display:inline-block;border:1px solid #c9a85c;color:#c9a85c;padding:3px 12px;border-radius:3px;font-size:14px;margin-top:6px}
+.div ul{padding-left:20px;margin:14px 0 0;color:#dfe6f2}
+table{border-collapse:collapse;width:100%;background:var(--card);font-size:clamp(11.5px,1.28vw,15px)}
+th{background:var(--navy);color:#fff;text-align:left;padding:7px 10px;font-weight:600}
+td{padding:6px 10px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.38}
+td:first-child{font-weight:600;color:var(--ink)}
+.wrap{overflow-x:auto}
+.box{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--navy);padding:10px 16px;margin:12px 0;border-radius:3px}
+.box p{margin:4px 0}
+.concl{background:var(--soft);border-left:4px solid var(--acc);padding:10px 16px;margin-top:14px;border-radius:3px}
+.concl p{margin:0}
+ol,ul{margin:6px 0;padding-left:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.k{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--acc);padding:10px 14px;border-radius:3px}
+.k b{display:block;color:var(--ink);margin-bottom:4px}
+.lk{cursor:pointer;transition:border-color .15s,box-shadow .15s}
+.lk:hover{border-color:var(--navy);box-shadow:0 2px 10px rgba(18,40,76,.18)}
+.qs{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px!important}
+.qs a{cursor:pointer;font-size:13px;border:1px solid var(--line);background:var(--soft);padding:3px 10px;border-radius:3px;color:var(--ink)}
+.qs a:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.div li[data-go]{cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.m{background:transparent!important;color:var(--ink)!important;border:1px solid var(--line)!important;padding:5px 10px!important;font-size:13px!important}
+.m.cur{background:var(--navy)!important;color:#fff!important;border-color:var(--navy)!important}
+@media (max-width:700px){.m.d{display:none}
+.s{padding:16px 16px 14px}
+.cover .in h1,.div .in h1{font-size:28px}
+.ico{width:48px;height:48px}
+h2{font-size:20px;padding-left:10px;border-left-width:4px}
+p,li{font-size:15px}
+nav{gap:8px;padding-left:12px;padding-right:12px}
+nav button{padding:8px 12px;font-size:13px}
+#ct{min-width:0;font-size:12px}
+.grid{grid-template-columns:1fr}
+.mx{max-width:100%}
+.wrap{overflow:visible}
+table,tbody,tr,td{display:block;width:100%}
+table{background:transparent}
+tr:first-child{display:none}
+tr{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:3px;margin-bottom:10px;overflow:hidden}
+td{border-bottom:0;padding:6px 12px;font-size:14px}
+td:first-child{background:var(--soft);color:var(--ink);font-weight:700;padding:8px 12px}
+td[data-label]:not(:first-child)::before{content:attr(data-label);display:block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);font-weight:700;margin-bottom:1px}
+.mail{padding:10px 14px}
+.mail p{font-size:14px}
+.status{font-size:14px}
+.box,.concl{padding:9px 12px}
+.pts{font-size:13px}}
+.k p{margin:0;font-size:clamp(13px,1.4vw,16px)}
+.status{display:inline-block;background:var(--navy);color:#fff;padding:5px 14px;border-radius:3px;font-weight:600;font-size:clamp(14px,1.6vw,18px)}
+.mx{display:grid;grid-template-columns:1fr 1fr;gap:6px;max-width:420px;margin:10px 0}
+.mx div{padding:12px;text-align:center;font-size:13px;background:var(--soft);border:1px solid var(--line);color:var(--mut)}
+.mx .hit{background:var(--navy);color:#fff;font-weight:700;border-color:var(--navy)}
+.mail{background:var(--card);border:1px solid var(--line);border-radius:3px;padding:12px 18px}
+.mail p{margin:5px 0;font-size:clamp(12.5px,1.4vw,16px)}
+.mail .h{border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:8px;color:var(--mut)}
+nav{position:fixed;left:0;right:0;bottom:0;height:calc(52px + env(safe-area-inset-bottom,0px));padding:0 6vw env(safe-area-inset-bottom,0px);background:var(--card);border-top:1px solid var(--line);display:flex;align-items:center;gap:12px;z-index:5}
+nav button{background:var(--navy);color:#fff;border:0;border-radius:3px;padding:7px 16px;font-size:14px;cursor:pointer}
+nav button:disabled{opacity:.35;cursor:default}
+#bar{flex:1;height:4px;background:var(--line);border-radius:2px;overflow:hidden}
+#bar i{display:block;height:100%;background:var(--acc);width:0}
+#ct{font-size:13px;color:var(--mut);min-width:90px;text-align:right}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+<symbol id="chart" viewBox="0 0 24 24"><path d="M4 20h16M7 20v-7M12 20V6M17 20v-10"/></symbol>
+<symbol id="doc" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h7"/></symbol>
+</svg>
+
+<div class="deck" id="deck">
+
+<!-- 1 Couverture -->
+<section class="s cover on"><div class="in">
+<div class="tag">Examen · Veille réglementaire · 13/11/2026</div>
+<h1>Veille réglementaire RH<br>Cas NOVALYS</h1>
+<p style="color:#dfe6f2">Vittoria RIZZARDI · B3 RRH</p>
+<p style="color:#dfe6f2">Entreprise de 180 salariés répartis sur deux établissements</p>
+</div></section>
+
+<!-- 2 Sommaire -->
+<section class="s"><div class="tag">Plan de la présentation</div><h2>Table des matières</h2><p class="mut" style="margin-top:0">Cliquer sur un dossier ou sur une question pour y accéder directement.</p>
+<div class="grid">
+<div class="k lk" data-go="2"><b>Dossier 1 · 5 points</b><p>Concevoir et organiser la veille</p><p class="qs"><a data-go="3">Q1 Domaines</a><a data-go="4">Q2 Sources</a></p></div>
+<div class="k lk" data-go="5"><b>Dossier 2 · 4 points</b><p>Qualifier et fiabiliser une information</p><p class="qs"><a data-go="6">Q3 Démarche</a><a data-go="7">Q4 Réseau professionnel</a><a data-go="8">Q5 Statut</a></p></div>
+<div class="k lk" data-go="9"><b>Dossier 3 · 6 points</b><p>Analyser l’impact RH</p><p class="qs"><a data-go="10">Q6 Fiche d’impact</a><a data-go="12">Q7 Priorisation</a></p></div>
+<div class="k lk" data-go="13"><b>Dossier 4 · 5 points</b><p>Transformer la veille en action</p><p class="qs"><a data-go="14">Q8 Plan d’action</a><a data-go="15">Q9 Alerte à la DRH</a></p></div>
+</div></section>
+
+<!-- D1 -->
+<section class="div s"><div class="in">
+<svg class="ico"><use href="#search"/></svg>
+<div class="tag">Dossier 1</div><h1>Concevoir et organiser la veille</h1><span class="pts">5 points</span>
+<ul><li data-go="3">Question 1 : Les domaines de veille (3 points)</li><li data-go="4">Question 2 : Les sources (2 points)</li></ul>
+</div></section>
+
+<section class="s"><div class="tag">Dossier 1 · Question 1 · 3 points</div><h2>Les six domaines de veille RH</h2>
+<p class="mut" style="margin-top:0">Une veille organisée autour de six domaines prioritaires pour anticiper les évolutions réglementaires, limiter les risques juridiques et améliorer les pratiques internes.</p>
+<div class="wrap"><table><tr><th>Domaine de veille</th><th>Exemple de sujet à surveiller</th><th>Importance pour NOVALYS</th></tr>
+<tr><td>Droit du travail</td><td>Évolution du Code du travail, durée du travail, congés et contrats.</td><td>Sécuriser les pratiques RH et éviter les erreurs dans la gestion des 180 salariés.</td></tr>
+<tr><td>Santé et sécurité au travail</td><td>Mise à jour du DUERP, prévention des risques psychosociaux et du harcèlement moral.</td><td>Répondre aux problèmes de management et améliorer la prévention des risques professionnels.</td></tr>
+<tr><td>Recrutement et non-discrimination</td><td>Évolution des règles concernant les discriminations à l’embauche.</td><td>Garantir l’égalité de traitement entre les candidats et sécuriser les recrutements.</td></tr>
+<tr><td>Handicap et inclusion</td><td>Obligation d’emploi des travailleurs handicapés (OETH).</td><td>Permettre à NOVALYS de respecter ses obligations et de favoriser l’inclusion.</td></tr>
+<tr><td>Télétravail et organisation du travail</td><td>Règles relatives au télétravail, droit à la déconnexion et santé au travail.</td><td>Encadrer les pratiques de télétravail et protéger les salariés.</td></tr>
+<tr><td>Relations sociales et dialogue social</td><td>Obligations de consultation du CSE, réunions et négociations collectives.</td><td>Améliorer le dialogue social et respecter les obligations liées au CSE.</td></tr></table></div>
+<div class="concl"><p><b>Conclusion :</b> ces six domaines correspondent directement aux difficultés rencontrées par NOVALYS. La veille doit permettre d’anticiper les problèmes plutôt que d’intervenir uniquement lorsqu’une situation devient conflictuelle.</p></div></section>
+
+<section class="s"><div class="tag">Dossier 1 · Question 2 · 2 points</div><h2>Les cinq sources et outils de veille</h2>
+<div class="wrap"><table><tr><th>Source / outil</th><th>Information recherchée</th><th>Intérêt pour NOVALYS</th><th>Précaution à prendre</th></tr>
+<tr><td>1. Légifrance</td><td>Lois, décrets et articles du Code du travail.</td><td>Consulter les textes juridiques officiels et leur date d’application.</td><td>Vérifier que le texte est en vigueur et consulter sa dernière version.</td></tr>
+<tr><td>2. Ministère du Travail</td><td>Actualités sociales, obligations de l’employeur, évolutions réglementaires.</td><td>Comprendre les nouvelles obligations et leurs conséquences.</td><td>Vérifier la date de publication et retrouver le texte juridique correspondant.</td></tr>
+<tr><td>3. INRS</td><td>Santé, sécurité au travail, DUERP et risques psychosociaux.</td><td>Conseils pratiques pour améliorer la prévention et les conditions de travail.</td><td>Distinguer les recommandations de prévention des obligations légales.</td></tr>
+<tr><td>4. URSSAF</td><td>Cotisations sociales, déclarations et obligations liées à l’emploi.</td><td>Sécuriser la gestion administrative et sociale des salariés.</td><td>Vérifier les dates d’application et les mises à jour des règles.</td></tr>
+<tr><td>5. Newsletters spécialisées RH (ex. Éditions Tissot)</td><td>Actualités en droit social, recrutement, gestion du personnel, relations sociales.</td><td>Recevoir régulièrement des alertes et des analyses adaptées aux professionnels RH.</td><td>Ne pas la prendre comme seule preuve : vérifier auprès d’une source officielle.</td></tr></table></div>
+<div class="concl"><p><b>Conclusion :</b> croiser systématiquement les sources spécialisées avec les textes officiels, pour éviter une décision RH fondée sur une information incomplète ou erronée.</p></div></section>
+
+<!-- D2 -->
+<section class="div s"><div class="in">
+<svg class="ico"><use href="#shield"/></svg>
+<div class="tag">Dossier 2</div><h1>Qualifier et fiabiliser une information</h1><span class="pts">4 points</span>
+<ul><li data-go="6">Question 3 : La démarche de vérification (2 points)</li><li data-go="7">Question 4 : Le réseau professionnel, source insuffisante (1 point)</li><li data-go="8">Question 5 : Le statut à attribuer à l’information (1 point)</li></ul>
+</div></section>
+
+<section class="s"><div class="tag">Dossier 2 · Question 3 · 2 points</div><h2>La démarche de vérification</h2>
+<p class="mut" style="margin-top:0">Avant de transmettre l’information à la DRH, déterminer si elle est réellement applicable à NOVALYS.</p>
+<div class="grid">
+<div class="k"><b>1. Identifier l’origine</b><p>Retrouver l’auteur : organisme officiel, professionnel du droit ou simple utilisateur d’un réseau social.</p></div>
+<div class="k"><b>2. Rechercher le texte juridique</b><p>Consulter Légifrance pour vérifier si une loi ou un décret sur les deux jours minimum de télétravail existe.</p></div>
+<div class="k"><b>3. Vérifier le statut du texte</b><p>Simple proposition, projet de loi, texte adopté ou réglementation déjà en vigueur.</p></div>
+<div class="k"><b>4. Contrôler les dates</b><p>Date de publication, d’adoption et surtout d’entrée en vigueur.</p></div>
+<div class="k"><b>5. Consulter plusieurs sources</b><p>Comparer avec le ministère du Travail et d’autres organismes spécialisés.</p></div>
+<div class="k"><b>6. Vérifier le champ d’application</b><p>S’assurer que la mesure concerne les entreprises privées et les salariés de NOVALYS.</p></div></div>
+<div class="concl"><p>Une fois ces vérifications effectuées, transmettre une information fiable à la DRH en précisant les éventuelles conséquences pour l’entreprise.</p></div></section>
+
+<section class="s"><div class="tag">Dossier 2 · Question 4 · 1 point</div><h2>Pourquoi le réseau professionnel n’est-il pas une source suffisante ?</h2>
+<div class="box"><p>Un message publié sur un réseau professionnel <b>ne constitue pas une source juridique fiable</b>, même lorsqu’il est largement partagé.</p></div>
+<ul>
+<li>Le nombre de partages ne garantit ni l’exactitude ni la validité d’une information.</li>
+<li>Le message peut être incomplet, sorti de son contexte ou présenter une simple proposition comme une obligation légale.</li>
+<li>Il ne précise aucun texte officiel permettant de vérifier cette nouvelle obligation.</li></ul>
+<div class="concl"><p><b>Conclusion :</b> pour prendre une décision RH, NOVALYS doit s’appuyer sur des sources reconnues, notamment Légifrance et le ministère du Travail, afin de vérifier l’existence et l’applicabilité de la règle.</p></div></section>
+
+<section class="s"><div class="tag">Dossier 2 · Question 5 · 1 point</div><h2>Quel statut attribuer à cette information ?</h2>
+<p>Statut retenu dans le tableau de veille :</p>
+<p><span class="status">Projet / Proposition en discussion : Non applicable</span></p>
+<ul>
+<li>Il s’agit d’une proposition actuellement discutée, mais elle n’a pas été adoptée et n’est donc pas entrée en vigueur.</li>
+<li>Elle ne constitue pas une obligation légale pour NOVALYS, qui ne doit donc pas modifier sa politique de télétravail sur cette seule base.</li>
+<li>Il reste intéressant de la conserver dans le tableau de veille pour suivre son évolution et anticiper une future modification réglementaire.</li></ul></section>
+
+<!-- D3 -->
+<section class="div s"><div class="in">
+<svg class="ico"><use href="#chart"/></svg>
+<div class="tag">Dossier 3</div><h1>Analyser l’impact RH</h1><span class="pts">6 points</span>
+<ul><li data-go="10">Question 6 : Fiche d’analyse d’impact (4 points)</li><li data-go="12">Question 7 : Priorisation Impact / Urgence (2 points)</li></ul>
+</div></section>
+
+<section class="s"><div class="tag">Dossier 3 · Question 6 · 4 points (1/2)</div><h2>Évolution retenue : le renforcement des obligations relatives au DUERP</h2>
+<div class="box"><p>Évolution retenue car elle correspond à une difficulté majeure de NOVALYS : son DUERP n’est pas régulièrement actualisé et ne prend pas suffisamment en compte les risques réels rencontrés par les salariés.</p>
+<p>La loi n° 2021-1018 du 2 août 2021, relative à la santé au travail, a renforcé les obligations liées au DUERP. Ses dispositions principales sont entrées en vigueur le 31 mars 2022.</p></div>
+<div class="wrap"><table><tr><th style="width:28%">Élément</th><th>Analyse pour NOVALYS</th></tr>
+<tr><td>Évolution identifiée</td><td>Renforcement des obligations concernant l’évaluation et la prévention des risques professionnels à travers le DUERP.</td></tr>
+<tr><td>Source</td><td>Loi n° 2021-1018 du 2 août 2021 et articles L. 4121-3-1 et R. 4121-2 du Code du travail.</td></tr>
+<tr><td>Date d’entrée en vigueur</td><td>31 mars 2022 pour les principales dispositions issues de la loi.</td></tr>
+<tr><td>Population concernée</td><td>Les 180 salariés répartis sur les deux établissements, y compris les salariés en télétravail.</td></tr>
+<tr><td>Processus RH concernés</td><td>Santé et sécurité au travail, prévention des risques, gestion des conditions de travail, dialogue social et management.</td></tr></table></div></section>
+
+<section class="s"><div class="tag">Dossier 3 · Question 6 · 4 points (2/2)</div><h2>Fiche d’analyse d’impact : conséquences et risques</h2>
+<div class="wrap"><table><tr><th style="width:24%">Élément</th><th>Analyse pour NOVALYS</th></tr>
+<tr><td>Impact juridique</td><td>Disposer d’un DUERP actualisé, issu d’une véritable évaluation des risques. Avec 180 salariés, établir aussi un PAPRIPACT (programme annuel de prévention des risques professionnels et d’amélioration des conditions de travail).</td></tr>
+<tr><td>Impact organisationnel</td><td>Organiser des évaluations sur les deux établissements, recueillir les remontées des salariés, identifier les risques et mettre en place des actions de prévention avec un suivi régulier.</td></tr>
+<tr><td>Impact social</td><td>Limiter les situations de stress, de mal-être et de management toxique ; améliorer le dialogue entre salariés, managers et RH.</td></tr>
+<tr><td>Impact financier</td><td>Coûts possibles (audit, formation des managers, aménagement des postes, actions de prévention), mais pouvant limiter les coûts liés à l’absentéisme, aux accidents du travail et au turnover.</td></tr>
+<tr><td>Risque en cas de non-adaptation</td><td>Sanctions financières, contentieux et mise en cause de la responsabilité de NOVALYS en cas d’accident ou d’atteinte à la santé d’un salarié.</td></tr></table></div>
+<div class="concl"><p><b>Précisions importantes :</b> DUERP actualisé au moins une fois par an (entreprises d’au moins 11 salariés) et lors d’un aménagement important ou d’une nouvelle information sur un risque · CSE consulté sur le DUERP et ses mises à jour · PAPRIPACT obligatoire dès 50 salariés. Ces obligations concernent directement NOVALYS (180 salariés).</p></div></section>
+
+<section class="s"><div class="tag">Dossier 3 · Question 7 · 2 points</div><h2>Priorisation selon la matrice Impact / Urgence</h2>
+<div class="mx"><div>Faible impact<br>Forte urgence</div><div class="hit">Fort impact<br>Forte urgence</div><div>Faible impact<br>Faible urgence</div><div>Fort impact<br>Faible urgence</div></div>
+<ul>
+<li>NOVALYS compte 180 salariés et son DUERP n’est ni correctement actualisé ni suivi.</li>
+<li>Plusieurs risques psychosociaux sont liés aux problèmes de management et aux conditions de travail.</li>
+<li>L’organisation hybride peut rendre certains risques moins visibles pour les RH.</li></ul>
+<div class="concl"><p><b>Conclusion :</b> intervention rapide nécessaire pour protéger les salariés et respecter les obligations légales : évaluation réelle des risques sur les deux établissements, association du CSE et programme de prévention avec actions concrètes et échéances précises.</p></div></section>
+
+<!-- D4 -->
+<section class="div s"><div class="in">
+<svg class="ico"><use href="#doc"/></svg>
+<div class="tag">Dossier 4</div><h1>Transformer la veille en action</h1><span class="pts">5 points</span>
+<ul><li data-go="14">Question 8 : Plan d’action opérationnel (3 points)</li><li data-go="15">Question 9 : Alerte professionnelle à destination de la DRH (2 points)</li></ul>
+</div></section>
+
+<section class="s"><div class="tag">Dossier 4 · Question 8 · 3 points</div><h2>Plan d’action : trois actions prioritaires et complémentaires</h2>
+<div class="wrap"><table><tr><th>Action</th><th>Responsable</th><th>Échéance</th><th>Priorité</th><th>Résultat attendu</th></tr>
+<tr><td>1. Réaliser un audit du DUERP sur les deux établissements, en identifiant les risques réels : risques psychosociaux, surcharge de travail, management, télétravail et ergonomie des postes.</td><td>DRH + Référent santé et sécurité</td><td>Sous 1 mois</td><td>Très haute</td><td>Disposer d’un DUERP actualisé et représentatif des conditions de travail réelles.</td></tr>
+<tr><td>2. Construire un PAPRIPACT avec des mesures de prévention concrètes, un budget, des responsables et des indicateurs de suivi.</td><td>DRH + Direction + Managers</td><td>Sous 2 mois</td><td>Haute</td><td>Transformer les risques identifiés en actions de prévention mesurables.</td></tr>
+<tr><td>3. Associer le CSE et sensibiliser les managers aux risques psychosociaux, au harcèlement et à la prévention des risques professionnels.</td><td>DRH + CSE + Managers</td><td>Sous 3 mois</td><td>Haute</td><td>Améliorer le dialogue social, responsabiliser les managers et limiter les situations à risque.</td></tr></table></div>
+<div class="box"><p><b>Indicateurs de suivi :</b> taux de réalisation des actions du PAPRIPACT · nombre de risques identifiés et traités · évolution du taux d’absentéisme · nombre de signalements liés aux risques psychosociaux.</p></div>
+<div class="concl"><p>Ces trois actions traitent le problème à la source, respectent les obligations réglementaires et améliorent durablement les conditions de travail.</p></div></section>
+
+<section class="s"><div class="tag">Dossier 4 · Question 9 · 2 points</div><h2>Alerte professionnelle destinée à la DRH</h2>
+<div class="mail">
+<div class="h"><b>Destinataire :</b> direction.rh@novalys.fr<br><b>Objet :</b> ALERTE RH : Mise en conformité du DUERP et prévention des risques professionnels</div>
+<p>À l’attention de la Direction des Ressources Humaines,</p>
+<p>À la suite de notre veille réglementaire, j’attire votre attention sur les obligations renforcées concernant le DUERP, issues de la loi du 2 août 2021, applicables depuis le 31 mars 2022.</p>
+<p>Cette réglementation concerne l’ensemble des 180 salariés de NOVALYS, répartis sur nos deux établissements. Notre DUERP actuel n’étant pas suffisamment actualisé ni représentatif des conditions de travail réelles, notre situation présente un risque de non-conformité.</p>
+<p>Les problèmes de management signalés, les risques psychosociaux et le développement du télétravail renforcent la nécessité d’agir rapidement. Le niveau de risque est considéré comme élevé, tant sur le plan juridique que sur le plan humain.</p>
+<p>Je recommande de réaliser un audit complet du DUERP, d’associer le CSE et d’élaborer un PAPRIPACT adapté à notre organisation. Une sensibilisation des managers devra également être organisée. Il serait souhaitable de lancer ces actions dans les meilleurs délais.</p>
+<p><i>Service Ressources Humaines · NOVALYS</i></p></div></section>
+
+<!-- Sources -->
+<section class="s"><div class="tag">Sources et références documentaires</div><h2>Sources juridiques utilisées</h2>
+<ul>
+<li><b>Légifrance</b> – Article L. 4121-3-1 du Code du travail : obligations relatives au DUERP.</li>
+<li><b>Ministère du Travail</b> – Le document unique d’évaluation des risques professionnels : modalités de mise à jour, PAPRIPACT et prévention.</li>
+<li><b>Ministère du Travail</b> – Information et consultation du CSE : obligations relatives au dialogue social.</li>
+<li><b>Ministère du Travail</b> – Attributions du CSE en matière de santé et sécurité.</li></ul>
+<div class="concl"><p>Merci de votre attention.</p></div></section>
+
+</div>
+<nav><button id="pv">Précédent</button><button id="nx">Suivant</button><div id="bar"><i></i></div><button class="m" data-go="1">Sommaire</button><button class="m d" data-go="2">D1</button><button class="m d" data-go="5">D2</button><button class="m d" data-go="9">D3</button><button class="m d" data-go="13">D4</button><div id="ct"></div></nav>
+<script>
+(function(){
+var s=[].slice.call(document.querySelectorAll('.s')),i=0,pv=document.getElementById('pv'),nx=document.getElementById('nx'),b=document.querySelector('#bar i'),c=document.getElementById('ct');
+function go(n){i=Math.max(0,Math.min(s.length-1,n));s.forEach(function(e,k){e.classList.toggle('on',k===i)});s[i].scrollTop=0;
+pv.disabled=i===0;nx.disabled=i===s.length-1;var cd=i>=13&&i<16?13:i>=9&&i<13?9:i>=5&&i<9?5:i>=2&&i<5?2:i===1?1:-1;document.querySelectorAll('.m').forEach(function(m){m.classList.toggle('cur',+m.getAttribute('data-go')===cd)});b.style.width=((i+1)/s.length*100)+'%';c.textContent=(i+1)+' / '+s.length}
+document.addEventListener('click',function(e){var t=e.target.closest('[data-go]');if(t)go(+t.getAttribute('data-go'))});pv.onclick=function(){go(i-1)};nx.onclick=function(){go(i+1)};
+document.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();go(i+1)}else if(e.key==='ArrowLeft'||e.key==='PageUp'){go(i-1)}});
+document.querySelectorAll('table').forEach(function(t){var h=[].map.call(t.rows[0].cells,function(c){return c.textContent});[].slice.call(t.rows,1).forEach(function(r){[].forEach.call(r.cells,function(c,k){c.setAttribute('data-label',h[k]||'')})})});
+var x0=0,y0=0;document.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+document.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;if(Math.abs(dx)>70&&Math.abs(dx)>1.8*Math.abs(dy)){go(dx<0?i+1:i-1)}},{passive:true});
+go(0)})();
+</script>
+</body>
+</html>
